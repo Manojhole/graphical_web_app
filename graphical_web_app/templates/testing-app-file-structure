@@ -1,0 +1,12 @@
+graphical_web_app/
+├── app.py  ← main app
+├── app1.py ← testing app1
+├── app2.py ← testing app2
+├── app3.py ← testing app3
+├── templates/
+│   ├── app_login.html
+│   ├── app_unlock.html
+│   └── base.html
+├── static/
+│   └── images/ ← already done
+└── database/app.db ← shared DB

@@ -1,0 +1,21 @@
+ main_app_web/
+├── app.py
+├── database/
+│   └── app.db               # SQLite DB (can later switch to MySQL/PostgreSQL)
+├── static/
+│   ├── css/
+│   └── images/
+│       ├── emojis/
+│       ├── fruits/
+│       └── flowers/
+├── templates/
+│   ├── base.html
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   ├── set_password.html
+│   ├── forgot_password.html
+├── utils/
+│   └── db_init.py
+├── requirements.txt
+└── run.py

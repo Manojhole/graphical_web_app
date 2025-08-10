@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Welcome {{ mobile }}</h2>
+
+<p>Choose app to set graphical password:</p>
+<ul>
+    <li><a href="{{ url_for('set_password', app_name='app1') }}">Set Password for App1</a></li>
+    <li><a href="{{ url_for('set_password', app_name='app2') }}">Set Password for App2</a></li>
+    <li><a href="{{ url_for('set_password', app_name='app3') }}">Set Password for App3</a></li>
+</ul>
+
+<a href="{{ url_for('logout') }}">Logout</a>
+{% endblock %}
