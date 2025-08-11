@@ -15,7 +15,7 @@ def login():
         mobile = request.form['mobile']
 
         # Get category and password_seq from DB
-        conn = get_db()
+      \\\\  conn = get_db()
         cursor = conn.cursor()
         cursor.execute("SELECT category, password_seq FROM graphical_passwords WHERE mobile=? AND app_name='app1'", (mobile,))
         row = cursor.fetchone()
@@ -49,3 +49,4 @@ def unlock():
 
 if __name__ == '__main__':
     app.run(port=5001, debug=True)
+
